@@ -1,13 +1,30 @@
 <ion-view view-title="五子棋">
-  <ion-content>
-    <button class="button">双人对战</button>
-    <button class="button">人机大战</button>
-    <button class="button">重新开始</button>
-
-    <!--<canvas chess-box ></canvas>-->
+    <ion-content >
+        <ul class="list">
+            <li class="item item-toggle">
+                双人对战
+                <label class="toggle toggle-assertive">
+                    <input type="checkbox" ng-model="cmdTwoPerson">
+                    <div class="track">
+                        <div class="handle"></div>
+                    </div>
+                </label>
+            </li>
+            <li class="item range">
+                <i class="icon ion-arrow-shrink" ng-click="gridWidth=(gridWidth-1)<10?gridWidth:(gridWidth-1);"></i>
+                <input type="range" name="volume" min="10" max="40" ng-model="gridWidth">
+                <i class="icon ion-arrow-expand" ng-click="gridWidth=(gridWidth-1+2)>40?gridWidth:(gridWidth-1+2);"></i>
+            </li>
+            <li style="padding:10px;text-align:right;">
+                <a class="button button-small button-outline icon-right ion-refresh button-balanced" ng-click="restart()">重新开始</a>
+            </li>
+        </ul>
 
     <!--<div yq-chessbox ></div>-->
-    <yq-chessbox gridWidth="20"></yq-chessbox>
+        <yq-chessbox grid-width="{{gridWidth}}" equle-width="equleWidth" cmd-restart="cmdRestart"
+                     two-person="cmdTwoPerson">
 
-  </ion-content>
+        </yq-chessbox>
+
+    </ion-content>
 </ion-view>
