@@ -68,7 +68,7 @@ MyAPP.run(function ($ionicPlatform) {
         views: {
           'tab-demos': {
             templateUrl: 'templates/tab-game2048.html',
-            controller: 'DemosCtrl'
+            controller: 'Game2048Ctrl'
           }
         }
       })

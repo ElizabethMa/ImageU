@@ -348,7 +348,7 @@ MyAPP.directive('yqChessbox', function ($document, $log) {
 				chessbox.style.margin = "20px 10px 20px 4px";
 				chessbox.style.boxShadow = "-2px -2px 2px #EFEFEF, 5px 5px 5px #B9B9B9";
 				chessbox.style.padding = (borderWidth / 2 - 1) + "px";
-				chessbox.style.position = "absolute";
+				//chessbox.style.position = "absolute";
 
 				for (var i = 0; i < numChessLines; i++) {
 					for (var j = 0; j < numChessLines; j++) {

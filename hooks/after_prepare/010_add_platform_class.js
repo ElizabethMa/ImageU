@@ -11,6 +11,7 @@
 var fs = require('fs');
 var path = require('path');
 
+
 var rootdir = process.argv[2];
 
 function addPlatformBodyTag(indexPath, platform) {
