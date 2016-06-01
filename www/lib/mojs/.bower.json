@@ -1,0 +1,44 @@
+{
+  "name": "mojs",
+  "description": "motion graphics toolbelt for the web",
+  "version": "0.174.4",
+  "license": "MIT",
+  "homepage": "https://github.com/legomushroom/mojs",
+  "authors": [
+    "Oleg Solomka @legomushroom <legomushroom@gmail.com>"
+  ],
+  "main": "lib/mojs.js",
+  "keywords": [
+    "motion",
+    "motion",
+    "graphics",
+    "animation",
+    "effects"
+  ],
+  "ignore": [
+    "**/.*",
+    "bower_components",
+    "node_modules",
+    "coverage",
+    "build",
+    "docs",
+    "spec",
+    "css",
+    "js"
+  ],
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "_release": "0.174.4",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.174.4",
+    "commit": "a9ac36c10a25b116496780ff536f03186d580b38"
+  },
+  "_source": "https://github.com/legomushroom/mojs.git",
+  "_target": "^0.174.4",
+  "_originalSource": "mojs",
+  "_direct": true
+}

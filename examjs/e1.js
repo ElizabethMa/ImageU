@@ -9,6 +9,7 @@ var fs = require('fs');
 
 //console.log(fs);
 
+// 异步方式
 fs.stat('sample.txt', function (err, stat) {
   //console.log(err);
   if (err) {
@@ -29,5 +30,6 @@ fs.stat('sample.txt', function (err, stat) {
   }
 });
 
+// 同步方式
 var f = fs.statSync('sample.txt');
 console.log(f);

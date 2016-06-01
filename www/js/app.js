@@ -81,6 +81,15 @@ MyAPP.run(function ($ionicPlatform) {
           }
         }
       })
+      .state('tab.mojs', {
+        url: '/mojs',
+        views: {
+          'tab-demos': {
+            templateUrl: 'templates/tab-mojs.html',
+            controller: 'MojsCtrl'
+          }
+        }
+      })
       .state('tab.wuziqi', {
         url: '/wuziqi',
         views: {
